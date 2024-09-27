@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Successful</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #1e90ff;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .success-message {
+            color: #1e90ff;
+            font-size: 24px;
+            margin-top: 30px;
+        }
+
+        button {
+            background-color: #1e90ff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #4682b4;
+        }
+
+        /* Styling for the image preview */
+        .image-preview {
+            margin-top: 30px;
+            border: 2px solid #1e90ff;
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Congratulations!</h1>
+    <p class="success-message">Your photo has been successfully uploaded and is being processed.</p>
+
+    <!-- Image preview -->
+    <img class="image-preview" src="/uploads/{{ filename }}" alt="Uploaded Image">
+
+    <button onclick="window.location.href='/'">Upload Another Image</button>
+
+</body>
+</html>
